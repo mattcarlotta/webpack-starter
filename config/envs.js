@@ -1,8 +1,9 @@
-const { NODE_ENV, PORT } = process.env;
+const { ANALYZE, NODE_ENV, PORT } = process.env;
 
 const inDevelopment = NODE_ENV === "development";
 
 module.exports = {
+  ANALYZE /* analyze build output */,
   currentDirectory: process.cwd() /* current working directory */,
   inDevelopment /* in development environment */,
   localIdentName:
