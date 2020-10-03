@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const { resolve } = require("path");
 const express = require("express");
 const morgan = require("morgan");
@@ -28,3 +29,4 @@ app.listen(PORT, err => {
     console.err(`\nUnable to start server: ${err}`);
   }
 });
+/* eslint-enable no-console */

@@ -1,8 +1,8 @@
 /* istanbul ignore file */
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./root";
-import "./styles/globals/globals.scss";
+import App from "~root";
+import "~styles/globals/globals.scss";
 
 export const render = Component => {
   ReactDOM.render(<Component />, document.getElementById("root"));

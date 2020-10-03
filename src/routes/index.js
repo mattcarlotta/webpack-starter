@@ -1,16 +1,13 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import MessageContainer from "~containers/MessageContainer";
-import LazyLoad from "~components/LazyLoad";
+import Home from "~pages/Home";
+import NotFound from "~pages/NotFound";
 
 const Routes = () => (
-  <>
-    <MessageContainer />
-    <Switch>
-      <Route exact path="/" component={LazyLoad("Home")} />
-      <Route component={LazyLoad("NotFound")} />
-    </Switch>
-  </>
+  <Switch>
+    <Route exact path="/" component={Home} />
+    <Route component={NotFound} />
+  </Switch>
 );
 
 export default Routes;

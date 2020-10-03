@@ -61,13 +61,6 @@ const optimization = {
     chunks: "all",
     maxInitialRequests: Infinity,
     minSize: 0,
-    //   /* group chunks by vendor to reduce large chunking */
-    //   cacheGroups: {
-    //     vendors: {
-    //       test: /[\\/]node_modules[\\/]/,
-    //       filename: 'bundle.js',
-    //     },
-    //   },
   },
 };
 

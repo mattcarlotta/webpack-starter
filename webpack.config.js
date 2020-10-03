@@ -1,20 +1,19 @@
-const devServer = require('./config/devServer');
-const plugins = require('./config/plugins');
-const optimization = require('./config/optimization');
-const output = require('./config/output');
-const rules = require('./config/rules');
-const { entryPath } = require('./config/paths');
-const { inDevelopment } = require('./config/envs');
+const devServer = require("./config/devServer");
+const plugins = require("./config/plugins");
+const optimization = require("./config/optimization");
+const output = require("./config/output");
+const rules = require("./config/rules");
+const { alias, entryPath } = require("./config/paths");
+const { inDevelopment } = require("./config/envs");
 
 // =============================================================== //
 // WEBPACK CONFIGURATION                                           //
 // =============================================================== //
-
 module.exports = {
-  devtool: inDevelopment ? 'cheap-module-source-map' : false,
+  devtool: inDevelopment ? "cheap-module-source-map" : false,
   devServer,
   entry: [entryPath],
-  mode: inDevelopment ? 'development' : 'production',
+  mode: inDevelopment ? "development" : "production",
   module: { rules },
   optimization,
   output,
@@ -22,8 +21,9 @@ module.exports = {
     hints: false,
   },
   resolve: {
-    modules: ['src', 'node_modules'],
-    extensions: ['*', '.js', '.jsx', '.css', '.scss'],
+    modules: ["src", "node_modules"],
+    extensions: ["*", ".js", ".jsx", ".css", ".scss"],
+    alias,
   },
   plugins,
 };

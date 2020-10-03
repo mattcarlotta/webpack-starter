@@ -70,7 +70,7 @@ const plugins = [
     fileName: "asset-manifest.json",
     publicPath,
     generate: (seed, files) => {
-      const manifestFiles = files.reduce(function (manifest, file) {
+      const manifestFiles = files.reduce((manifest, file) => {
         manifest[file.name] = file.path;
         return manifest;
       }, seed);

@@ -43,7 +43,6 @@ const cssRule = ({ include, exclude, modules, sourceMap, test }) => ({
           mode: modules ? "local" : "global",
           localIdentName,
         },
-        localsConvention: "camelCase",
       },
     },
     "sass-loader",

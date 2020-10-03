@@ -1,4 +1,4 @@
-## React Starter Kit
+## Webpack Starter Kit
 
 ![Z6Qqlng.png](https://i.imgur.com/Z6Qqlng.png)
 
@@ -45,13 +45,9 @@
 |   └── index.html
 |
 ├── src
-|   ├── actions
 |   ├── components
-|   ├── constants
-|   ├── containers
 |   ├── images
 |   ├── pages
-|   ├── reducers
 |   ├── root
 |   ├── routes
 |   ├── styles
@@ -109,12 +105,12 @@
 - src/styles/variables: partial shared variables.
 - src/styles/styles.scss: indexed partial files for easier sharing (see notes in [styles.scss](src/styles/styles.scss#L1-L48) for important information).
 - src/utils/setupTests/index.js: enzyme test setup for your React components (see [notes](src/utils/setupTests/index.js#L8-L16) in setup.js for important information).
-- .babelrc: babel config for react js files.
 - .browserslistrc: browsers list config.
 - .eslintignore: eslint config for ignoring scss files.
 - .eslintrc: eslint config for linting js files.
 - .prettierc: prettier config.
 - .stylelintrc.json: stylelint config for linting scss files.
+- babel.config.js: babel config for react js files.
 - jest.json: jest config.
 - server.js: an express configuration to serve production assets.
 - webpack.config.js: a single webpack environment based config.
@@ -122,7 +118,7 @@
 </details>
 <br />
 
-By default, any directories within `src` are aliased (`~`). This means that you can refer to root files or directories by using the `~` symbol followed by a child file or directory name. For example, `~reducers`, refers to the root `reducers/index.js` file, while `~reducers/Messages` refers to the child `reducers/Messages/index.js` file. This allows for rapid development when referring to root-level directories within src as it eliminates the hassle of specifiying relative paths (like `../../../../../../../reducers`) to the directory!
+By default, the current directories within `src` are aliased (`~`). This means that you can refer to root files or directories by using the `~` symbol followed by a child file or directory name. For example, `~reducers`, refers to the root `reducers/index.js` file, while `~reducers/Messages` refers to the child `reducers/Messages/index.js` file. This allows for rapid development when referring to root-level directories within src as it eliminates the hassle of specifiying relative paths (like `../../../../../../../reducers`) to the directory!
 
 ## Packages Incorporated
 
@@ -131,17 +127,13 @@ To see the latest package versions, please check out the [package.json](package.
 <details>
 <summary>Click to expand brief overview of packages</summary>
 <pre><code>
-- <a href="https://github.com/axios/axios">Axios</a>
 - <a href="https://github.com/babel/babel">Babel</a>
 - <a href="https://github.com/webpack-contrib/css-loader">CSS Loader</a>
-- <a href="https://github.com/supasate/connected-react-router">Connected React Router</a>
 - <a href="https://github.com/eslint/eslint/">Eslint</a>
 - <a href="http://airbnb.io/enzyme/">Enzyme</a>
 - <a href="https://github.com/smooth-code/error-overlay-webpack-plugin">Error Overlay Webpack Plugin</a>
 - <a href="https://github.com/expressjs/express">Express</a>
 - <a href="https://github.com/geowarin/friendly-errors-webpack-plugin">Friendly Errors Webpack Plugin</a>
-- <a href="https://github.com/ReactTraining/history">History</a>
-- <a href="https://github.com/typicode/husky">Husky</a>
 - <a href="https://github.com/facebook/jest">Jest</a>
 - <a href="https://github.com/lodash/lodash">Lodash</a>
 - <a href="https://github.com/webpack-contrib/mini-css-extract-plugin">Mini CSS Extract Plugin</a>
@@ -150,9 +142,6 @@ To see the latest package versions, please check out the [package.json](package.
 - <a href="https://github.com/facebook/prop-types">PropTypes</a>
 - <a href="https://github.com/facebook/react">React</a>
 - <a href="https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom">React Router Dom</a>
-- <a href="https://github.com/reduxjs/redux">Redux</a>
-- <a href="https://github.com/zalmoxisus/redux-devtools-extension">Redux DevTools Extension</a>
-- <a href="https://github.com/reduxjs/redux-thunk">Redux Thunk</a>
 - <a href="https://github.com/webpack-contrib/sass-loader">Sass Loader</a>
 - <a href="https://stylelint.io/">Stylelint</a>
 - <a href="https://github.com/kristerkari/stylelint-scss">Stylelint-SCSS</a>

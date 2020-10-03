@@ -1,7 +1,6 @@
 import { JSDOM } from "jsdom";
 import { configure, mount, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-import { createStoreFactory } from "~utils/testingUtils";
 
 configure({ adapter: new Adapter() });
 
@@ -22,12 +21,9 @@ global.document = document;
 global.window = document.defaultView;
 global.HTMLElement = window.HTMLElement;
 global.HTMLAnchorElement = window.HTMLAnchorElement;
-global.createStoreFactory = createStoreFactory;
 global.mount = mount;
 global.shallow = shallow;
 global.React = require("react");
-global.Provider = require("react-redux").Provider;
-global.ConnectedRouter = require("connected-react-router").ConnectedRouter;
 global.Router = require("react-router").Router;
 global.Route = require("react-router-dom").Route;
 global.Switch = require("react-router-dom").Switch;
