@@ -65,7 +65,7 @@
 1 - Clone the boilerplate repository.
 
 ```
- git clone git@github.com:mattcarlotta/react-starter-kit.git
+ git clone git@github.com:mattcarlotta/webpack-starter.git
 ```
 
 2 - Run `yarn` or `npm install` to install dependencies.
