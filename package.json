@@ -1,9 +1,9 @@
 {
-  "name": "react-start-kit",
-  "version": "3.0.0",
+  "name": "webpack-starter-kit",
+  "version": "0.0.1",
   "description": "A starter kit for React and Redux applications.",
   "main": "./src/index.js",
-  "repository": "https://github.com/mattcarlotta/react-starter-kit",
+  "repository": "https://github.com/mattcarlotta/webpack-starter",
   "author": "Matt Carlotta",
   "license": "MIT",
   "private": false,
