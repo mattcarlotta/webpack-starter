@@ -118,7 +118,7 @@
 </details>
 <br />
 
-By default, the current directories within `src` are aliased (`~`). This means that you can refer to root files or directories by using the `~` symbol followed by a child file or directory name. For example, `~reducers`, refers to the root `reducers/index.js` file, while `~reducers/Messages` refers to the child `reducers/Messages/index.js` file. This allows for rapid development when referring to root-level directories within src as it eliminates the hassle of specifiying relative paths (like `../../../../../../../reducers`) to the directory!
+By default, the current directories within `src` are aliased (`~`). This means that you can refer to root files or directories by using the `~` symbol followed by a child file or directory name. For example, `~components`, refers to the root `components/index.js` file, while `~components/Messages` refers to the child `components/Messages/index.js` file. This allows for rapid development when referring to root-level directories within src as it eliminates the hassle of specifiying relative paths (like `../../../../../../../components`) to the directory!
 
 ## Packages Incorporated
 
