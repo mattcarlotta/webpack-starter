@@ -60,7 +60,6 @@ const plugins = [
   /* webpack ENV files */
   new DefinePlugin({
     "process.env": {
-      APIPORT: JSON.stringify(APIPORT),
       NODE_ENV: JSON.stringify(NODE_ENV),
       PORT: JSON.stringify(PORT),
     },
