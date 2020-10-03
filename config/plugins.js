@@ -16,7 +16,7 @@ const {
   publicPath,
   templatePath,
 } = require("./paths");
-const { ANALYZE, APIPORT, inDevelopment, NODE_ENV, PORT } = require("./envs");
+const { ANALYZE, inDevelopment, NODE_ENV, PORT } = require("./envs");
 
 // =============================================================== //
 // WEBPACK PLUGINS                                                 //
