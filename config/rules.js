@@ -28,7 +28,7 @@ const mediaRule = ({ test, outputPath }) => ({
   ],
 });
 
-/* defines a SCSS rule */
+/* defines a (S)CSS rule */
 const cssRule = ({ include, exclude, modules, sourceMap, test }) => ({
   test,
   include,
