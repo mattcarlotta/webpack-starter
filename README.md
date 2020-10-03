@@ -122,7 +122,7 @@ By default, the current directories within `src` are aliased (`~`). This means t
 
 ## Packages Incorporated
 
-To see the latest package versions, please check out the [package.json](package.json). If you run into any issues, please fill out an issue report <a href="https://github.com/mattcarlotta/react-starter-kit/issues">here</a>.
+To see the latest package versions, please check out the [package.json](package.json). If you run into any issues, please fill out an issue report <a href="https://github.com/mattcarlotta/webpack-starter/issues">here</a>.
 
 <details>
 <summary>Click to expand brief overview of packages</summary>
