@@ -9,7 +9,7 @@ const resolvePath = path => resolve(currentDirectory, path);
 
 /* directory folders can now be referenced with "~" */
 const alias = {
-  "~components/*": resolvePath("src/components/"),
+  "~components": resolvePath("src/components/"),
   "~images": resolvePath("src/images/"),
   "~pages": resolvePath("src/pages/"),
   "~root": resolvePath("src/root/index"),
