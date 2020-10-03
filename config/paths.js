@@ -37,8 +37,6 @@ module.exports = {
   localCSS: resolvePath("src"),
   /* path to the globals.scss file (src/styles/globals/globals.scss) */
   globalCSS: resolvePath("src/styles/globals"),
-  /* path to required ant design icons */
-  icons: resolvePath("src/utils/icons/index.js"),
   /* analyzed client assets (next/analyze/client.html) */
   analyzePath: "./analyze/client.html",
   /* compiled fonts build path (build/assets) */
